@@ -1,0 +1,9 @@
+.env
+myenv/
+venv/
+__pycache__/
+chroma_db/
+documents/
+*.png
+.git/
+.gitignore

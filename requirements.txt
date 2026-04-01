@@ -1,0 +1,28 @@
+# Core LLM & orchestration
+groq==0.22.0
+langgraph==0.3.34
+langchain==0.3.23
+langchain-core==0.3.54
+langchain-chroma==0.2.3
+langchain-huggingface==0.1.2
+langchain-text-splitters==0.3.8
+
+# Vector store
+chromadb==0.6.3
+
+# Embeddings
+sentence-transformers==4.1.0
+
+# Document parsing
+PyPDF2==3.0.1
+python-docx==1.1.2
+
+# Web search fallback
+duckduckgo-search==8.0.1
+
+# UI
+streamlit==1.44.1
+
+# Utilities
+python-dotenv==1.1.0
+typing-extensions==4.13.2

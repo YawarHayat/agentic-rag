@@ -1,0 +1,33 @@
+# Environment & secrets
+.env
+.env.local
+.env.production
+
+# Virtual environments
+myenv/
+venv/
+env/
+.venv/
+
+# Python cache
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Vector store (rebuilt on ingest)
+chroma_db/
+
+# Uploaded documents (user data)
+documents/
+
+# Graph output (generated file)
+agentic_rag_graph.png
+
+# IDE & tools
+.vscode/
+.idea/
+.claude/
+
+# OS
+.DS_Store
+Thumbs.db
