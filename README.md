@@ -62,7 +62,7 @@ The pipeline is implemented as a directed graph using [LangGraph](https://github
 | Layer | Technology |
 |---|---|
 | Agent orchestration | LangGraph (`StateGraph`) |
-| LLM (reasoning & answers) | Groq API — LLaMA 3 8B |
+| LLM (reasoning & answers) | Groq API — LLaMA 3.3 70B |
 | Embeddings | HuggingFace `all-MiniLM-L6-v2` |
 | Vector store | ChromaDB (local persistence) |
 | Document parsing | PyPDF2, python-docx |
@@ -163,5 +163,5 @@ For short, factual queries the overhead of sending chunk previews to the LLM for
 **Why `all-MiniLM-L6-v2` for embeddings?**
 It runs entirely locally with no API cost, loads in under a second, and performs well on general semantic similarity tasks. For a thesis prototype this was the right balance between quality and simplicity.
 
-**Why Groq?**
-The LLaMA 3 8B model on Groq's inference API returns responses fast enough for interactive use. For a system that may call the LLM three or four times per query (selection, answer, rewrite, summary), latency matters.
+**Why Groq + LLaMA 3.3 70B?**
+The LLaMA 3.3 70B model on Groq's inference API delivers strong reasoning quality at speeds fast enough for interactive use. For a system that may call the LLM three or four times per query (selection, answer, rewrite, summary), both quality and latency matter — Groq's hardware gives both.
